@@ -17,6 +17,7 @@ class Track {
     public String toString() {
         //// Replace the following statement with code that returns
         //// the data of this track according to the method's documentation.
+
         return artist + ", " + title + ", " + duration;
     }
 
@@ -50,7 +51,7 @@ class Track {
             formattedDuration = formattedDuration + minutes + ":" + seconds;
         else if (seconds > 0 && seconds < 9)
                 formattedDuration = formattedDuration + minutes + ":0" + seconds;
-        else if (seconds = 0) 
+        else if (seconds == 0) 
                 formattedDuration = formattedDuration + minutes + ":00";
 
         return formattedDuration;

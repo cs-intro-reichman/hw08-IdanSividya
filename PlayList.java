@@ -101,7 +101,7 @@ class PlayList {
         if (i < 0  || i > maxSize || size == maxSize){
             return false;
         }
-        for (int k = size; k = i+1; k--)
+        for (int k = size; k > i; k--)
         {
             tracks [k] = tracks [size -1];
         }
@@ -154,7 +154,7 @@ class PlayList {
         //// replace this comment with your code
         for (int i = 0; i < other.size; i++)
         {
-            this.add(other.track[i]);
+            this.add(other.tracks[i]);
         }
     }
 
