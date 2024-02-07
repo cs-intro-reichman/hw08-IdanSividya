@@ -5,6 +5,8 @@ class RuniFi {
         // Creates a play list with a maximum capacity of 10 tracks
         // (small maximum capacity is good for testing purposes)
         PlayList myList = new PlayList(10);
+        int totalSeconds = 310;
+        System.out.println (totalSeconds%60+":"+(totalSeconds - (totalSeconds%60)*60));
     
         // Creates some tracks
         Track track1 = new Track("Fernando", "ABBA", 354);
