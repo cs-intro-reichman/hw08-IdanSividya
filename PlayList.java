@@ -118,7 +118,7 @@ class PlayList {
         //// replace this comment with your code
         if (size != maxSize && i >= 0 && i<size){
             for (int k = i; k < size; k++){
-                tracks [i] = tracks [i + 1];
+                tracks [k] = tracks [k + 1];
             }
         size--;
         }
